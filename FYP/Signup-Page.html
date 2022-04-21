@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup Page.css">
+  </head>
+  <body>
+
+    <div class="header">
+      <div id="home">
+          <div class="navbackground">
+          <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <img src="FYP-Images/ChilliAss.png" width="124" length="164">
+              </div>
+              <div class="text">
+                   <h1>Secrets of Malaysian</h1>
+              </div>
+          </div>
+          </div>
+          </div>
+      </div>
+    </div>      
+
+    <div class="grid-container">
+      <div class="one">
+        <p class="Signup-text">Signup and start sharing recipes<br>
+          Create or login to an existing account now!</p>
+
+      </div>
+
+      <div class="two">
+        <form action="Signup.php" method="post">
+          <div class="textfield">
+            <input type="email" name="email" required>
+            <label>Email</label>
+          </div>
+
+          <div class="textfield">
+            <input type="password" name="password" required>
+            <label>Password</label>
+          </div>
+
+          <div class="textfield">
+            <input type="password" name="cfm_password" required>
+            <label id="cfm_password">Confirm Password</label>
+          </div>
+
+          <input value="Signup" type="submit">
+        </form>
+      </div>
+
+      <div class="three">
+        <p class="Signup-text">Already a member? <a id="login" href="Login-Page.html">Login</a></p>
+      </div>
+    </div>
+  </body>
+</html>

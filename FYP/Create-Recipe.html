@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Recipe</title>
+  <link rel="stylesheet" href="Create-Recipe.css">
+</head>
+
+  <body>
+    <div class="header">
+      <div id="home">
+          <div class="navbackground">
+              <div class="container">
+                  <div class="navbar">
+                      <div class="logo">
+                          <img src="FYP-Images/ChilliAss.png" width="124" length="164">
+                      </div>
+                        <div class="text">
+                          <h1>Secrets of Malaysian</h1>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="menu">
+    <ul class="menu">
+    <li><a id = "acc" href="Accounts/index.php">Profile Page</a></li>
+    <li><a id = "recipe" href="My-Recipes/index.php">My Recipes</a></li>
+    <li><a id = "favourited" href="My-Favourites/index.php">My Favourites</a></li>
+    <li><a id = "create" class = "active" href="Create-Recipe.html">Create Recipe</a></li>
+    </ul>
+    </div>
+
+        <form enctype="multipart/form-data" action="Create-Recipe.php" method="POST" id="user-recipe">
+        <div class="superdiv">
+          <div class="textfield">
+           <label>Recipe Name</label>
+           <input type="text" name="recipe_name" required>
+          </div>
+
+          <div class="textfield">
+           <label for="img">Select image:</label>
+           <input type="file" id="img" name="uploadfile" accept="image/*">       
+          </div>
+
+          <div class="textfield">
+           <h2>Category</h2>
+           <input type="checkbox" id="malay" name="category[]" value="Malay">
+           <label for="malay"> Malay </label><br>
+           <input type="checkbox" id="chinese" name="category[]" value="Chinese">
+           <label for="chinese"> Chinese </label><br>
+           <input type="checkbox" id="indian" name="category[]" value="Indian">
+           <label for="indian"> Indian </label><br>
+           <input type="checkbox" id="dessert" name="category[]" value="Dessert">
+           <label for="dessert"> Dessert </label><br>
+           <input type="checkbox" id="beverage" name="category[]" value="Beverage">
+           <label for="beverage"> Beverage </label><br>
+           <br>
+          </div>
+
+          <div style="margin-top: -25%" class="text-area">
+           <label>Ingredient list</label>
+           <br>
+           <textarea rows="7" cols="50" name="ingredient_name"></textarea>
+          </div>
+
+          <div style="margin-top: -5%" class="text-area">
+            <label>Steps</label>
+            <br>
+            <textarea rows="10" cols="50" name="steps"></textarea>
+          </div>
+        </div>
+          <input type="submit" value="Create" href="">
+
+        </form>  
+      </div>
+    </div>
+  </body>
+</html>
